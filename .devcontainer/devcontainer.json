@@ -1,0 +1,25 @@
+{
+	"name": "wrds Docker Container",
+	// "build": {
+	// 	"dockerfile": "Dockerfile",
+	// 	"context": ".."
+	// },
+	// 	use image instead of rebuilding every time
+	"image": "ghcr.io/trr266/wrds-template:main",
+	// Set *default* container specific settings.json values on container create.
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.fontFamily": "monospace"
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"GitHub.copilot",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// "onCreateCommand": "julia --project=docs startup_julia.jl"
+}
