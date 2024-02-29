@@ -28,3 +28,4 @@ index_files/
 .venv/
 *.sqlite3
 *.pyc
+.DS_Store
