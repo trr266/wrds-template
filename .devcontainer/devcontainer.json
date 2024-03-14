@@ -1,11 +1,11 @@
 {
 	"name": "wrds Docker Container",
-	// "build": {
-	// 	"dockerfile": "Dockerfile",
-	// 	"context": ".."
-	// },
+	 "build": {
+	 	"dockerfile": "Dockerfile",
+	 	"context": "..",
+		"cacheFrom": "ghcr.io/trr266/wrds-template:main"
+	 },
 	// 	use image instead of rebuilding every time
-	"image": "ghcr.io/trr266/wrds-template:main",
 	// Set *default* container specific settings.json values on container create.
 	"customizations": {
 		"vscode": {
@@ -23,3 +23,8 @@
 	// "forwardPorts": [],
 	// "onCreateCommand": "julia --project=docs startup_julia.jl"
 }
+
+"dockerFile": "Dockerfile",
+	"build": {  
+		"cacheFrom": "ghcr.io/joachim-gassen/osacc:latest"
+	}
