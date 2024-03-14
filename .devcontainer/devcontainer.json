@@ -23,8 +23,3 @@
 	// "forwardPorts": [],
 	// "onCreateCommand": "julia --project=docs startup_julia.jl"
 }
-
-"dockerFile": "Dockerfile",
-	"build": {  
-		"cacheFrom": "ghcr.io/joachim-gassen/osacc:latest"
-	}
