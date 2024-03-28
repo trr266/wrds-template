@@ -29,3 +29,4 @@ index_files/
 *.sqlite3
 *.pyc
 .DS_Store
+*.parquet
