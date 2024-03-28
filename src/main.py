@@ -19,8 +19,6 @@ df = pd.DataFrame(data)
 duckdb_conn = duckdb.connect()
 
 # Load the DataFrame into a DuckDB table
-duckdb_conn.from_df(df, table_name)
-#duckdb.register(table_name, df)
 duckdb_conn.sql(f"CREATE TABLE {table_name} AS SELECT * FROM df")
 
 # Save the DuckDB table to a Parquet file
