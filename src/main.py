@@ -7,8 +7,8 @@ import os
 table_name = 'bank_fundq'
 
 # Fetch data from WRDS
-os.environ["PGPASSWORD"] = os.environ.get('WRDS_PASSWORD')
 os.environ["PGUSER"] = os.environ.get('WRDS_USERNAME')
+os.environ["PGPASSWORD"] = os.environ.get('WRDS_PASSWORD')
 db = wrds.Connection()
 data = db.get_table(library='comp', table = table_name, obs=10)
 
